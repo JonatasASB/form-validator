@@ -27,7 +27,7 @@ main {
 .right-side {
     padding: 50px;
     width: 400px;
-    background-color: #3F3D56;
+    background-color: #6e6e74;
 
     & h1 {
         text-align: center;
@@ -54,4 +54,14 @@ main {
     color: rgb(0, 0, 0);
     padding: 5px;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+
+    .right-side {
+        width: 100%;
+    }
 }
