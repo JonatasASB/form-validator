@@ -4,12 +4,14 @@ let FORMvalidator = {
 
         let send = true;
 
+        FORMvalidator.clearErrors();
+
         let inputs = form.querySelectorAll('input')
         inputs.forEach((input) => {
             let check = FORMvalidator.checkInput(input)
             if (check !== true) {
                 send = false
-                console.log(check)
+                FORMvalidator.showError(input, check)
             }
         })
 
@@ -38,6 +40,26 @@ let FORMvalidator = {
             }
         }
         return true
+    },
+    showError: (input, error) => {
+        input.style.border = '2px solid #f00'
+
+        let errorElement = document.createElement('div');
+        errorElement.classList.add('error');
+        errorElement.innerHTML = error;
+        input.parentElement.insertBefore(errorElement, input.elementSibling)
+    },
+    clearErrors: () => {
+        let inputs = form.querySelectorAll('input');
+        inputs.forEach((input) => {
+            input.style.border = '';
+        })
+
+        let erros = document.querySelectorAll('.error');
+        erros.forEach((error) => {
+            error.remove();
+
+        })
     }
 }
 

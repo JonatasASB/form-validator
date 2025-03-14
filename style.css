@@ -27,7 +27,7 @@ main {
 .right-side {
     padding: 50px;
     width: 400px;
-    background-color: rgb(34, 167, 167);
+    background-color: #3F3D56;
 
     & h1 {
         text-align: center;
@@ -46,4 +46,12 @@ main {
         width: 100%;
         outline: none;
     }
+}
+
+.error {
+    font-size: 10px;
+    background-color: #9d9bb4;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
 }
