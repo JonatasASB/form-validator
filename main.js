@@ -74,3 +74,12 @@ let FORMvalidator = {
 
 let form = document.querySelector('.form-validator');
 form.addEventListener('submit', FORMvalidator.handleSubmit);
+
+document.querySelector('label[for="password"] span').addEventListener('click', () => {
+    let input = document.querySelector('#password');
+    if (input.getAttribute('type') === 'password') {
+        input.setAttribute('type', 'text')
+    } else {
+        input.setAttribute('type', 'password')
+    }
+})

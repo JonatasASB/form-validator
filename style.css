@@ -56,6 +56,12 @@ main {
     border-radius: 5px;
 }
 
+label[for=password] span {
+    position: absolute;
+    right: 60px;
+    line-height: 37px;
+}
+
 @media screen and (max-width: 800px) {
     main {
         flex-direction: column;
