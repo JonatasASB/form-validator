@@ -1,6 +1,7 @@
 # Validador de Formulários
 
-![Tela do Validador de Formulários](./Captura%20de%20tela%202025-03-25%20152934.png)
+![Captura de tela 2025-03-25 152934](https://github.com/user-attachments/assets/ee3d0e39-e584-4041-97e2-a64ecdcdb19d)
+
 
 ## Descrição
 
