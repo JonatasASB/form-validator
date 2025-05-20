@@ -83,3 +83,4 @@ document.querySelector('label[for="password"] span').addEventListener('click', (
         input.setAttribute('type', 'password')
     }
 })
+console.log('teste')
